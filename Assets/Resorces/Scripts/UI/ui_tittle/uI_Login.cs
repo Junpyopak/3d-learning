@@ -21,6 +21,7 @@ public class uI_Login : MonoBehaviour
 
     public void OnBtnLogin()
     {
+        Shared.Scenemgr.SetPlayerPrefsStringKey("id", textInput.text);
         if(textInput.text.Length<0 == true)
         {
             Shared.Scenemgr.ChangeScene(eSCENE.TITLE);

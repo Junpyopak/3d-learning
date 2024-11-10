@@ -5,7 +5,7 @@ using UnityEngine;
 public partial class Scenemgr : MonoBehaviour
 {
     //레지스트리,플레이어 아이디 존재유무에 따른 로그인
-    public void SetPlayerPrefsIntKey(string _key,int _value)//PlayerPrefs 는 int,float,string 사용
+    public void SetPlayerPrefsIntKey(string _key, int _value)//PlayerPrefs 는 int,float,string 사용
     {
         PlayerPrefs.SetInt(_key, _value);
         PlayerPrefs.Save();
