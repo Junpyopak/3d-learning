@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR;
 
 public class uI_Login : MonoBehaviour
 {
@@ -21,10 +22,12 @@ public class uI_Login : MonoBehaviour
 
     public void OnBtnLogin()
     {
+        
         Shared.Scenemgr.SetPlayerPrefsStringKey("id", textInput.text);
-        if(textInput.text.Length<0 == true)
+        if(PlayerPrefs.HasKey("id"))
         {
-            Shared.Scenemgr.ChangeScene(eSCENE.TITLE);
+           Debug.Log(textInput.text);
+           Shared.Scenemgr.ChangeScene(eSCENE.LOBBY);
         }
     }
 }
