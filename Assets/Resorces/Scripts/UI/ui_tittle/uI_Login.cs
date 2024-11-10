@@ -24,7 +24,7 @@ public class uI_Login : MonoBehaviour
     {
         
         Shared.Scenemgr.SetPlayerPrefsStringKey("id", textInput.text);
-        if(PlayerPrefs.HasKey("id"))
+        if(PlayerPrefs.GetString("id")==textInput.text)
         {
            Debug.Log(textInput.text);
            Shared.Scenemgr.ChangeScene(eSCENE.LOBBY);
