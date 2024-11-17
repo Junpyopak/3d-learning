@@ -35,7 +35,7 @@ public class uI_Login : MonoBehaviour
 
     public void OnBtnLogin()
     {
-        Shared.Scenemgr.GetSpriteAtlas("Common", "bg_cave_blueish_16x16");
+      //  Shared.Scenemgr.GetSpriteAtlas("Common", "bg_cave_blueish_16x16_0");
         if (inputField.text == Shared.Scenemgr.GetPlayerPrefsStringKey("id"))
         {
             Shared.Scenemgr.ChangeScene(eSCENE.LOBBY);
@@ -52,6 +52,7 @@ public class uI_Login : MonoBehaviour
         if (inputField.text.Length >= 2 || inputField.text.Length <= 7)
         {
             Shared.Scenemgr.SetPlayerPrefsStringKey("id", inputField.text);
+            Shared.Scenemgr.SaveFile();
         }
     }
 }
