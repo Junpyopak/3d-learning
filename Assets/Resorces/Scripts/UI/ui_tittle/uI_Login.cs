@@ -21,6 +21,10 @@ public class uI_Login : MonoBehaviour
         //    Shared.Scenemgr.ChangeScene(eSCENE.LOBBY);
         //}
 
+        //로그인계정이있는가?
+        //계쩡넣으라고함
+        //저장해서넘김
+
     }
 
     // Update is called once per frame
