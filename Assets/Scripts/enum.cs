@@ -13,3 +13,10 @@ public enum eSCENE
 
 }
 
+public enum eAi
+{
+    eAI_CREATE,
+    eAI_SEARCH,
+    eAI_MOVE,
+    eAI_RESET,
+}
