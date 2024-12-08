@@ -44,8 +44,9 @@ public class Table_Base
     protected CSVReader GetSVReader(string _Name)
     {
         string ext = ".csv";
+        string path = GetTablePath() + "/Document/";
 
-        FileStream file = new FileStream(".Document/"+_Name+ext,FileMode.Open,FileAccess.Read,FileShare.ReadWrite);
+        FileStream file = new FileStream(path + _Name+ext,FileMode.Open,FileAccess.Read,FileShare.ReadWrite);
 
         StreamReader stream = new StreamReader(file,System.Text.Encoding.UTF8);
 
