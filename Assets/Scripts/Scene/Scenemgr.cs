@@ -14,12 +14,13 @@ public partial class Scenemgr : MonoBehaviour
     {
         Shared.InitTableMgr();
 
-       Table_Character.Info info =  Shared.TableMgr.Character.Get(1);
+        Table_Character.Info info = Shared.TableMgr.Character.Get(1);
+        Table_Item.Info info1 = Shared.TableMgr.Item.Get(1);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
