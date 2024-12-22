@@ -6,7 +6,7 @@ public static class Shared
 {
     public static Scenemgr Scenemgr;//싱글턴 패턴 static 정적으로
     public static Table_Manager TableMgr;
-
+    public static SoundMgr SoundMgr;
     public static Table_Manager InitTableMgr()
     {
         if(TableMgr == null)
