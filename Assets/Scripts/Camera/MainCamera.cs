@@ -85,7 +85,7 @@ public class MainCamera : MonoBehaviour
         shakeInfo.TotalTime = 3f;
         shakeInfo.UseTotalTime = true;
 
-        shakeInfo.Shake = new Vector3(0.2f, 0.2f, 0f);
+        shakeInfo.Shake = new Vector3(0.3f, 0.3f, 0f);
 
         shakeInfo.Dest = shakeInfo.Shake;
         shakeInfo.Dir = shakeInfo.Shake;
