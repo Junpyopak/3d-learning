@@ -125,15 +125,15 @@ public class MainCamera : MonoBehaviour
             {
                 ShakeTr.localPosition += shakeInfo.Dir * dist;
 
-                float rc = transform.position.x - FovX - Left;
+                //float rc = transform.position.x - FovX - Left;
 
-                if (rc < 0)
-                    ShakeTr.localPosition += new Vector3(-rc, 0, 0);
+                //if (rc < 0)
+                //    ShakeTr.localPosition += new Vector3(-rc, 0, 0);
 
-                rc = Right - (transform.position.x + FovX);
+                //rc = Right - (transform.position.x + FovX);
 
-                if (rc < 0)
-                    ShakeTr.localPosition += new Vector3(rc, 0, 0);
+                //if (rc < 0)
+                //    ShakeTr.localPosition += new Vector3(rc, 0, 0);
 
                 CameraLimit(true);
 
@@ -167,15 +167,15 @@ public class MainCamera : MonoBehaviour
                 ShakeTr.localPosition = shakeInfo.Dest - shakeInfo.Dir * 
                     (-shakeInfo.RemainDist);
 
-                float rc = transform.position.x - FovX - Left;
+                //float rc = transform.position.x - FovX - Left;
 
-                if (rc < 0)
-                    ShakeTr.localPosition += new Vector3(-rc, 0, 0);
+                //if (rc < 0)
+                //    ShakeTr.localPosition += new Vector3(-rc, 0, 0);
 
-                rc = Right - (transform.position.x + FovX);
+                //rc = Right - (transform.position.x + FovX);
 
-                if (rc < 0)
-                    ShakeTr.localPosition += new Vector3(rc, 0, 0);
+                //if (rc < 0)
+                //    ShakeTr.localPosition += new Vector3(rc, 0, 0);
 
                 CameraLimit(true);
 
