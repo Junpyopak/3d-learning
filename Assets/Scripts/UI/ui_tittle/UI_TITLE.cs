@@ -20,7 +20,8 @@ public partial class UI_TITLE : MonoBehaviour
     }
     public void onBtnTitle()
     {
-        Shared.Scenemgr.ChangeScene(eSCENE.LOGIN);
+        // Shared.Scenemgr.ChangeScene(eSCENE.LOGIN);
+        Shared.MainCamera.Shake(0);
     }
 
     public void OnPointerDown(BaseEventData eventData)
