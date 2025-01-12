@@ -20,8 +20,12 @@ public partial class UI_TITLE : MonoBehaviour
     }
     public void onBtnTitle()
     {
+        float ScaleTime = 0.2f;
+        float SlowTime = 3f;
+        float SlowTimeConvertSlow = ScaleTime * SlowTime;
         // Shared.Scenemgr.ChangeScene(eSCENE.LOGIN);
         Shared.MainCamera.Shake(0);
+        Shared.MainCamera.ZoomEndStage(0F, -1.5F, 2f, SlowTime - 1.5f, 1f, Vector3.zero);
     }
 
     public void OnPointerDown(BaseEventData eventData)

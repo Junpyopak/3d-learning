@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-public class MainCamera : MonoBehaviour
+public partial class MainCamera : MonoBehaviour
 {
     bool CameraShake = false;
 
