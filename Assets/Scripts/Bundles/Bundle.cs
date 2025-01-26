@@ -21,5 +21,15 @@ public class Bundle : MonoBehaviour
 
         if(local == null )
             yield break;
+
+        //실제 게임오브젝
+        AssetBundleRequest asset = local.LoadAssetAsync<GameObject>
+            ("itemelement");
+
+        yield return asset;
+
+        var prefab = asset .asset as GameObject;
+
+        local.Unload(true);
     }
 }
